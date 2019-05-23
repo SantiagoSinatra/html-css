@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Formulario de Registro 1</title>
+
+    <link rel="stylesheet" href="css/formulario1.css"> <!-- link al css master -->
+
+</head>
+
+<body>
+
+    <div class="ss-container">
+
+        <section class="ss-section-form">
+
+            <article class="ss-article-form">
+
+                <form class="ss-form-form" method="POST" target="_self" action="">
+
+                    <fieldset class="ss-form-fieldset-usuario ss-form-fieldset-fieldset-global">
+
+                        <legend class="ss-form-fieldset-legend-global"><span class="ss-capitalize-global">datos</span>del cliente</legend>
+
+                        <div class="ss-form-container-grid-usuario">
+
+                            <div class="ss-form-div-nombre">
+                                <span class="ss-capitalize-global">nombre</span> <input
+                                    class="ss-form-input-text-global" name="nombreCliente" type="text"
+                                    placeholder="ingrese su nombre" required>
+                            </div>
+
+                            <div class="ss-form-div-apellido">
+                                <span class="ss-capitalize-global">apellido</span> <input
+                                    class="ss-form-input-text-global" name="apellidoCliente" type="text"
+                                    placeholder="ingrese su apellido" required>
+                            </div>
+
+                            <div class="ss-form-div-invitados">
+                                <span class="ss-capitalize-global">cantidad</span> de invitados <input
+                                    class="ss-form-input-text-global" name="cantidadInvitados" type="number" min="0"
+                                    max="8" placeholder="max 8" required>
+                            </div>
+
+                            <div class="ss-form-div-fecha">
+                                <span class="ss-capitalize-global">fecha</span> de reserva <input
+                                    class="ss-form-input-date-global" name="fechaReserva" type="date" required>
+                            </div>
+
+                            <div class="ss-form-div-email">
+                                <span class="ss-capitalize-global">email</span> <input class="ss-form-input-text-global"
+                                    name="emailCliente" type="email" placeholder="ingrese su email" required>
+                            </div>
+
+                            <div class="ss-form-div-telefono">
+                                <span class="ss-capitalize-global">telefono</span> <input
+                                    class="ss-form-input-text-global" name="telefonoCliente" type="text"
+                                    placeholder="ingrese un telefono" required>
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+                    <fieldset class="ss-form-fieldset-mesa ss-form-fieldset-fieldset-global">
+
+                        <legend class="ss-form-fieldset-legend-global"><span class="ss-capitalize-global">seleccion</span> de mesa</legend>
+
+                        <div class="ss-form-container-grid-mesa">
+
+                            <div class="ss-form-div-lugar">
+                                <span class="ss-capitalize-global">lugar</span> del restaurante <input list="lugarRestaurante" name="lugarSeleccionado" placeholder="seleccione un lugar" required>
+
+                                <datalist id="lugarRestaurante">
+                                    <option value="adentro"></option>
+                                    <option value="afuera"></option>
+                                    <option value="terraza"></option>
+                                    <option value="sala vip"></option>
+                                    <option value="cocina"></option>
+                                </datalist>
+
+                            </div>
+
+                            <div class="ss-form-div-fumador">
+
+                                <span class="ss-capitalize-global">sector</span> 
+                                
+                                <input class="ss-form-input-radiob-global" name="sector" type="radio" value="fumador"><span class="ss-capitalize-global">fumador</span>
+
+                                <input class="ss-form-input-radiob-global" name="sector" value="no fumador" type="radio"> <span class="ss-capitalize-global">no</span> fumador
+
+                            </div>
+
+                        </div>
+
+
+                    </fieldset>
+
+                </form>
+
+            </article>
+
+        </section>
+
+    </div>
+
+
+</body>
+
+</html>

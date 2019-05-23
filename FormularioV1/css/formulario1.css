@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+.ss-form-container-grid-usuario{
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-areas:
+    "nombre apellido"
+    "invitados fecha"
+    "email telefono"
+        
+}
+
+.ss-form-div-nombre{
+    grid-area: nombre;
+}
+
+.ss-form-div-apellido{
+    grid-area: apellido;
+}
+.ss-form-div-invitados{
+    grid-area: invitados;
+}
+
+.ss-form-div-fecha{
+    grid-area: fecha;
+}
+
+.ss-form-div-email{
+    grid-area: email;
+}
+
+.ss-form-div-telefono{
+    grid-area: telefono;
+}
+
+.ss-capitalize-global{
+    text-transform: capitalize;
+}
+
+.ss-form-container-grid-mesa{
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-areas:
+    "lugar"
+    "sector"
+}
+
+.ss-form-div-lugar{
+    grid-area: lugar;
+}
+
+.ss-form-div-sector{
+    grid-area: sector;
+}
