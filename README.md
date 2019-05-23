@@ -6,3 +6,4 @@ Dentro del mismo se encuentran algunos de mis trabajos que voy realizando a medi
 
 Este repositorio se actualiza constantemente con nuevos archivos!
 
+El repositorio esta dividido en diferentes carpetas que son contenedoras de proyectos distintos, pero todos en html y css.
