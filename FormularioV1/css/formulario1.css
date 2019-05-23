@@ -1,6 +1,35 @@
 *{
     box-sizing: border-box;
 }
+body{
+    margin: 0 auto;
+}
+
+.ss-container{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding: 0 2vw 0 2vw;
+    height: 100vh;
+    overflow-y: hidden;
+    background-image: url(../img/background/ss-background-form.png);
+    background-size: cover;
+    background-position-x: right;
+}
+
+.ss-article-title-global{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.ss-article-form{
+    margin-top: 1em;
+}
+
+.ss-form-fieldset-legend-global{
+    font-weight: bold;
+}
 
 .ss-form-container-grid-usuario{
     display: grid;
@@ -39,12 +68,17 @@
     text-transform: capitalize;
 }
 
+.ss-form-fieldset-mesa{
+    margin-top: 2em;
+}
+
 .ss-form-container-grid-mesa{
     display: grid;
     grid-row-gap: 20px;
     grid-template-areas:
     "lugar"
     "sector"
+    "servicio"
 }
 
 .ss-form-div-lugar{
@@ -53,4 +87,14 @@
 
 .ss-form-div-sector{
     grid-area: sector;
+}
+
+.ss-form-div-servicio{
+    grid-area: servicio;
+}
+
+.ss-form-div-formoptions{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
 }
